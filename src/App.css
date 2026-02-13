@@ -48,6 +48,7 @@
   width: 3rem;
   height: 3rem;
   pointer-events: none;
+  z-index: 50;
   animation: burst 2s ease-out forwards;
 }
 
