@@ -37,23 +37,23 @@ export default function Page() {
   return (
     <div className="-mt-16 flex h-screen flex-col items-center justify-center relative overflow-hidden">
       {/* Decorative hearts */}
-      <div className="absolute top-4 left-4">
-        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-56 h-56" />
+      <div className="absolute top-0 left-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
       </div>
-      <div className="absolute top-4 right-4">
-        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-56 h-56" />
+      <div className="absolute top-0 right-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
       </div>
-      <div className="absolute bottom-4 left-4">
-        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-56 h-56" />
+      <div className="absolute bottom-0 left-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
       </div>
-      <div className="absolute bottom-4 right-4">
-        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-56 h-56" />
+      <div className="absolute bottom-0 right-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
       </div>
-      <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-48 h-48" />
+      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 pointer-events-none">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-16 h-16 opacity-70" />
       </div>
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
-        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-48 h-48" />
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 pointer-events-none">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-16 h-16 opacity-70" />
       </div>
       
       {yesPressed ? (
