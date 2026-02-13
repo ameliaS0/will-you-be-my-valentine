@@ -55,7 +55,7 @@ export default function Page() {
                 "--ty": `${heart.ty}px`,
               } as React.CSSProperties}
             >
-              ❤️
+              <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-full h-full" />
             </div>
           ))}
         </>
