@@ -35,21 +35,29 @@ export default function Page() {
   };
 
   return (
-    <div className="-mt-16 flex h-screen flex-col items-center justify-center relative overflow-hidden" style={{ backgroundColor: "#FFF0F5" }}>
+    <div className="-mt-16 flex h-screen flex-col items-center justify-center relative overflow-hidden">
+      {/* Decorative hearts */}
+      <div className="absolute top-0 left-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
+      </div>
+      <div className="absolute top-0 right-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
+      </div>
+      <div className="absolute bottom-0 left-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
+      </div>
+      <div className="absolute bottom-0 right-0">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-20 h-20 opacity-70" />
+      </div>
+      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 pointer-events-none">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-16 h-16 opacity-70" />
+      </div>
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 pointer-events-none">
+        <img src="https://i.pinimg.com/originals/1d/5e/cc/1d5ecc2339406e3c610bfe21a1aec1fb.gif" alt="heart" className="w-16 h-16 opacity-70" />
+      </div>
+      
       {yesPressed ? (
         <>
-          <div className="absolute top-10 left-10">
-            <img src="https://i.pinimg.com/736x/aa/1e/4a/aa1e4a524ac4aec69959a11588eaf556.jpg" alt="confetti" className="w-24 h-24 opacity-80" />
-          </div>
-          <div className="absolute top-20 right-16">
-            <img src="https://i.pinimg.com/736x/aa/1e/4a/aa1e4a524ac4aec69959a11588eaf556.jpg" alt="confetti" className="w-32 h-32 opacity-70" />
-          </div>
-          <div className="absolute bottom-20 left-16">
-            <img src="https://i.pinimg.com/736x/aa/1e/4a/aa1e4a524ac4aec69959a11588eaf556.jpg" alt="confetti" className="w-28 h-28 opacity-75" />
-          </div>
-          <div className="absolute bottom-10 right-10">
-            <img src="https://i.pinimg.com/736x/aa/1e/4a/aa1e4a524ac4aec69959a11588eaf556.jpg" alt="confetti" className="w-20 h-20 opacity-80" />
-          </div>
           <img src="https://i.pinimg.com/originals/1f/a2/2b/1fa22befc10e3cbacd58c5b407a97997.gif" />
           <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!!</div>
         </>
