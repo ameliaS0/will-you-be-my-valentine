@@ -34,8 +34,32 @@ export default function Page() {
     return phrases[Math.min(noCount, phrases.length - 1)];
   };
 
+  const heartBurst = Array.from({ length: 12 }, (_, i) => {
+    const angle = (i / 12) * Math.PI * 2;
+    const distance = 200;
+    const tx = Math.cos(angle) * distance;
+    const ty = Math.sin(angle) * distance;
+    return { tx, ty, id: i };
+  });
+
   return (
     <div className="-mt-16 flex h-screen flex-col items-center justify-center relative overflow-hidden" style={{ backgroundColor: "#FFF0F5" }}>
+      {yesPressed && (
+        <>
+          {heartBurst.map((heart) => (
+            <div
+              key={heart.id}
+              className="heart-burst"
+              style={{
+                "--tx": `${heart.tx}px`,
+                "--ty": `${heart.ty}px`,
+              } as React.CSSProperties}
+            >
+              ❤️
+            </div>
+          ))}
+        </>
+      )}
       {yesPressed ? (
         <>
           <img src="https://i.pinimg.com/originals/1f/a2/2b/1fa22befc10e3cbacd58c5b407a97997.gif" />

@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+.heart-burst {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  pointer-events: none;
+  animation: burst 2s ease-out forwards;
+}
+
+@keyframes burst {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) scale(0);
+    opacity: 0;
+  }
+}
