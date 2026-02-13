@@ -58,7 +58,7 @@ export default function Page() {
       <div className="relative z-10 flex flex-col items-center justify-center">
         {yesPressed ? (
           <div className="animate-fadeIn text-center">
-            <div className="mb-6 transform animate-bounce">
+            <div className="mb-6">
               <img
                 src="https://i.pinimg.com/originals/1f/a2/2b/1fa22befc10e3cbacd58c5b407a97997.gif"
                 className="mx-auto rounded-3xl shadow-2xl max-w-md"
@@ -112,12 +112,6 @@ export default function Page() {
               </button>
             </div>
 
-            {/* Hint text */}
-            {noCount > 3 && (
-              <p className="mt-6 animate-bounce text-sm text-pink-600 font-semibold">
-                ✨ Hint: The "Yes" button is getting bigger... ✨
-              </p>
-            )}
           </div>
         )}
       </div>
